@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    /* box-sizing: border-box; */
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 #first_page{
@@ -19,7 +20,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    /* gap: 15px; */
+    justify-content: space-around;
+    align-items: center;
 }
 #profile_image{
     height: 140px;
@@ -30,7 +33,7 @@
 }
 #social_media{
     display: flex;
-    gap: 1px;
+    justify-content: space-evenly;
 }
 #social_media div:hover{
     transform: scale(1.3);
@@ -49,11 +52,11 @@
 }
 .navigating_window{
     position: relative;
-    margin-top: 300px;
+    /* margin-top: 300px; */
     height: 600px;
     width: 300px;
     float: left;
-    gap: 10px;
+    /* gap: 10px; */
     margin-left: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 200px;
@@ -178,19 +181,17 @@ li{
     }
 }
 
-/*about page*/
+/*--------about page--------------*/
 
 #about_page{
-    /* position: relative ;
-    margin-top: 800px ; */
-    height: 100vh ;
+    height: auto ;
     width: 75vw;
     float: left;
     color: black;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-left: 30px;
     margin-top: 55px;
-    /* background-color: #149ddd; */
+    margin-bottom: 100PX;
 }
 #hor_rule{
     height: 3.5px;
@@ -205,16 +206,12 @@ li{
 }
 #img_and_info{
     height: 370px;
-    /* background-color: #149ddd; */
     margin-top: 60px;
     display: flex;
     font-weight:50;
     gap: 15px;
 }
 #heading_prof{
-    /* margin-bottom: 10px; */
-    /* margin-left: 20px; */
-    /* padding-top: 0px; */
     padding: 0px 0px;
     box-sizing: border-box;
     font-size:x-large ;
@@ -251,12 +248,13 @@ li{
     box-shadow: 10px 10px 15px grey;
 }
 
-/* contact page */
+/* ---------contact page -------- */
 
 #contact_page{
     background-color: #fff;
-    height: 100vh;
+    height: auto;
     width: 80vw;
+    margin: auto;
 }
 
 #contact_page_contents{
@@ -277,8 +275,8 @@ li{
     gap: 4vw;
 }
 #address_div{
-    height: 80vh;
-    width: 40vw;
+    height: auto;
+    width: 38vw;
     background-color: rgb(156, 156, 156);
     display: flex;
     flex-direction: column;
@@ -288,8 +286,8 @@ li{
     margin: 30px;
 }
 #message_div{
-    height: 80vh;
-    width: 40vw;
+    height: auto;
+    width: 38vw;
     background-color: rgb(156, 156, 156);
     box-shadow: 10px 10px 10px gray;
 }
@@ -348,10 +346,10 @@ li{
     border: none;
 }
 
-/* resume page */
+/*---------- resume page -------- */
 
 #resume_page{
-    height: 140vh;
+    height: auto;
     width: 79vw;
     /* background-color: #d2eef8; */
     background-color: #b5d3fb ;
@@ -366,7 +364,7 @@ li{
     gap: 4.5vw;
 }
 #summary_div{
-    height: 100vh;
+    height: auto;
     width: 35vw;
     /* background-color: rgb(51, 228, 228); */
     display: flex;
@@ -375,24 +373,24 @@ li{
     /* border-left: 4px solid #1f5297; */
 }
 #experience_div{
-    height: 100vh;
+    height: auto;
     width: 35vw;
     /* background-color:palegreen; */
 }
 .summary{
-    height: 37vh ;
+    height: auto ;
     /* background-color: #fff; */
     /* border-left: 4px solid #1f5297; */
 }
 .education{
     margin-top: 20px;
-    height: 40vh;
+    height: auto;
     /* background-color: orange; */
     /* border- left: 4px solid #1f5297; */
 }
 .summary_content{
         padding-left: 20px;
-        height: 28vh;
+        height: auto;
         width: 33vw;
         /* width: ; */
         border-left: 2.5px solid #011d44;
@@ -446,4 +444,48 @@ li{
     display: contents;
     height: 50px;
     width: 50px;
+}
+/* 
+.projects{
+    background-color: #f5f5f5;
+}
+
+.cards{
+    font-size: 2rem;
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.c1{
+    background-color: white;
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.projects{
+    background-color: #85b1f0;
+    height: auto;
+    width: 78vw;
+    /* margin: auto; */
+}
+.projects_content{
+    /* background-color: #FC6D6D;    */
+    margin: 1rem;
+}
+#cards{
+    display: flex;
+    flex-direction: row;
+    /* background-color: aquamarine; */
+    justify-content: space-evenly;
+}
+.card{
+    display: flexbox;
+    height: 30vh;
+    width: 20vw;
+    gap: 10px;
+    margin: 10px;
+    background-color: aliceblue;
 }
